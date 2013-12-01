@@ -1,18 +1,18 @@
 //
-//  DialectorViewController.m
+//  DialectorLanguageController.m
 //  Dialector
 //
 //  Created by Keith Avery on 12/1/13.
 //  Copyright (c) 2013 Keith Avery. All rights reserved.
 //
 
-#import "DialectorViewController.h"
+#import "DialectorLanguageController.h"
 
-@interface DialectorViewController ()
+@interface DialectorLanguageController ()
 
 @end
 
-@implementation DialectorViewController
+@implementation DialectorLanguageController
 
 - (void)viewDidLoad
 {

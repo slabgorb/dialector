@@ -9,5 +9,6 @@
 #import "DialectorLanguage.h"
 
 @implementation DialectorLanguage
-
+@dynamic name;
+@dynamic contentList;
 @end

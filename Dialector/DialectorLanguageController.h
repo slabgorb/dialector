@@ -1,5 +1,5 @@
 //
-//  DialectorViewController.h
+//  DialectorLanguageController.h
 //  Dialector
 //
 //  Created by Keith Avery on 12/1/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DialectorViewController : UIViewController
+@interface DialectorLanguageController : UIViewController
 
 @end

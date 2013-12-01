@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface DialectorLanguage : NSObject
-
+@interface DialectorLanguage : NSManagedObject
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSArray *contentList;
 @end
