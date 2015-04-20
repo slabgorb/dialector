@@ -7,12 +7,22 @@
 //
 
 #import "DialectorLanguageController.h"
+#import "DialectorAppDelegate.h"
 
 @interface DialectorLanguageController ()
+@property (weak, nonatomic) IBOutlet UITextField *languageName;
 
 @end
 
 @implementation DialectorLanguageController
+- (IBAction)saveLanguage:(id)sender {
+    if ([[self.languageName text] isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Name" message:@"Please enter a name for the language." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    } else {
+        DialectorAppDelegate *delegate = (DialectorAppDelegate *)[[UIApplication sharedApplication] delegate];
+    }
+}
 
 - (void)viewDidLoad
 {

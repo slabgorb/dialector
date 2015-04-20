@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Content" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="contents" inverseEntity="Language" syncable="YES"/>
+    </entity>
+    <entity name="Language" syncable="YES">
+        <attribute name="histogram" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="lookback" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Content" inverseName="language" inverseEntity="Content" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Language" positionX="160" positionY="192" width="128" height="88"/>
+        <element name="Content" positionX="-189" positionY="333" width="128" height="103"/>
+    </elements>
+</model>

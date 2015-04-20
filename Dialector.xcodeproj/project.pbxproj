@@ -21,7 +21,9 @@
 		7DA25FC7184B9BB600BA6FA6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA25FA9184B9BB600BA6FA6 /* UIKit.framework */; };
 		7DA25FCF184B9BB600BA6FA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DA25FCD184B9BB600BA6FA6 /* InfoPlist.strings */; };
 		7DA25FD1184B9BB600BA6FA6 /* DialectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA25FD0184B9BB600BA6FA6 /* DialectorTests.m */; };
-		7DA25FDF184B9D4A00BA6FA6 /* DialectorLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA25FDE184B9D4A00BA6FA6 /* DialectorLanguage.m */; };
+		7DA25FE1184BA98A00BA6FA6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DA25FE0184BA98A00BA6FA6 /* CoreData.framework */; };
+		7DA25FE7184BAED500BA6FA6 /* Language.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DA25FE5184BAED500BA6FA6 /* Language.xcdatamodeld */; };
+		7DA26034184BEB3C00BA6FA6 /* DialectorLetterList.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA26033184BEB3C00BA6FA6 /* DialectorLetterList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		7DA25FCC184B9BB600BA6FA6 /* DialectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DialectorTests-Info.plist"; sourceTree = "<group>"; };
 		7DA25FCE184B9BB600BA6FA6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7DA25FD0184B9BB600BA6FA6 /* DialectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialectorTests.m; sourceTree = "<group>"; };
-		7DA25FDD184B9D4A00BA6FA6 /* DialectorLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialectorLanguage.h; sourceTree = "<group>"; };
-		7DA25FDE184B9D4A00BA6FA6 /* DialectorLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialectorLanguage.m; sourceTree = "<group>"; };
+		7DA25FE0184BA98A00BA6FA6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7DA25FE6184BAED500BA6FA6 /* Language.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Language.xcdatamodel; sourceTree = "<group>"; };
+		7DA26032184BEB3C00BA6FA6 /* DialectorLetterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialectorLetterList.h; sourceTree = "<group>"; };
+		7DA26033184BEB3C00BA6FA6 /* DialectorLetterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialectorLetterList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA25FE1184BA98A00BA6FA6 /* CoreData.framework in Frameworks */,
 				7DA25FA8184B9BB600BA6FA6 /* CoreGraphics.framework in Frameworks */,
 				7DA25FAA184B9BB600BA6FA6 /* UIKit.framework in Frameworks */,
 				7DA25FA6184B9BB600BA6FA6 /* Foundation.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		7DA25FA4184B9BB600BA6FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7DA25FE0184BA98A00BA6FA6 /* CoreData.framework */,
 				7DA25FA5184B9BB600BA6FA6 /* Foundation.framework */,
 				7DA25FA7184B9BB600BA6FA6 /* CoreGraphics.framework */,
 				7DA25FA9184B9BB600BA6FA6 /* UIKit.framework */,
@@ -120,7 +126,6 @@
 				7DA25FDA184B9CBE00BA6FA6 /* Model */,
 				7DA25FB4184B9BB600BA6FA6 /* DialectorAppDelegate.h */,
 				7DA25FB5184B9BB600BA6FA6 /* DialectorAppDelegate.m */,
-				7DA25FB7184B9BB600BA6FA6 /* Main.storyboard */,
 				7DA25FBD184B9BB600BA6FA6 /* Images.xcassets */,
 				7DA25FAC184B9BB600BA6FA6 /* Supporting Files */,
 			);
@@ -159,8 +164,9 @@
 		7DA25FDA184B9CBE00BA6FA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7DA25FDD184B9D4A00BA6FA6 /* DialectorLanguage.h */,
-				7DA25FDE184B9D4A00BA6FA6 /* DialectorLanguage.m */,
+				7DA26032184BEB3C00BA6FA6 /* DialectorLetterList.h */,
+				7DA26033184BEB3C00BA6FA6 /* DialectorLetterList.m */,
+				7DA25FE5184BAED500BA6FA6 /* Language.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 		7DA25FDC184B9CCB00BA6FA6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7DA25FB7184B9BB600BA6FA6 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -280,7 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA25FBC184B9BB600BA6FA6 /* DialectorLanguageController.m in Sources */,
-				7DA25FDF184B9D4A00BA6FA6 /* DialectorLanguage.m in Sources */,
+				7DA25FE7184BAED500BA6FA6 /* Language.xcdatamodeld in Sources */,
+				7DA26034184BEB3C00BA6FA6 /* DialectorLetterList.m in Sources */,
 				7DA25FB6184B9BB600BA6FA6 /* DialectorAppDelegate.m in Sources */,
 				7DA25FB2184B9BB600BA6FA6 /* main.m in Sources */,
 			);
@@ -503,6 +511,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7DA25FE5184BAED500BA6FA6 /* Language.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DA25FE6184BAED500BA6FA6 /* Language.xcdatamodel */,
+			);
+			currentVersion = 7DA25FE6184BAED500BA6FA6 /* Language.xcdatamodel */;
+			path = Language.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7DA25F9A184B9BB600BA6FA6 /* Project object */;
 }
